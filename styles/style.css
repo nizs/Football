@@ -134,7 +134,7 @@ media query styles
 mobile devices 
 ------------------*/
 @media screen and (max-width:688px) {
-    /* header media query */
+    /* header section media query */
     .container{
         width: 80%;
     }
@@ -210,6 +210,7 @@ tablet devices
     h1{
         font-size: 52px;
     }
+    /* header section media query */
     .fa-bars{
         display: block;
         color: #fff;
@@ -220,6 +221,7 @@ tablet devices
     nav ul{
         display: none;
     }
+    /* hero section media query */
     .hero{
         flex-direction: column;
         padding: 32px 0px;
@@ -227,6 +229,7 @@ tablet devices
     .hero_title button{
         margin-bottom: 52px;
     }
+    /* player bio section media query */
     .players{
         grid-template-columns: repeat(2, 1fr);
     }
