@@ -1,2 +1,105 @@
 /* root CSS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 64px;
+    color: #fff;
+}
+
+/* header style */
+.header{
+    background-color: #2d25a0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-bars{
+    display: none;
+}
+nav ul{
+    display: flex;
+    margin: 52px 0px;
+    padding: 0;
+}
+nav ul li{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 36px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+.nav_right button , .hero_title button{
+    background-color: #E02C6D;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 22px;
+}
+
+/* hero section style */
+.hero_section{
+    background-color: #2d25a0;
+}
+.hero{
+    display: flex;
+    padding: 60px 0px;
+}
+.hero_banner img{
+    width: 556px;
+    height: 438px;
+    margin-left: 30px;
+}
+.hero_title button:hover{
+    transform: scale(1.2);
+    transition: 0.7s ease-in-out;;
+}
+
+/*------------------------ 
+media query styles 
+--------------------------*/
+@media screen and (max-width:688px) {
+    /* header media query */
+    .fa-bars{
+        display: block;
+        color: #fff;
+        font-size: 16px;
+    }
+    .navbar{
+        padding: 33px 0px;
+    }
+    nav ul{
+        display: none;
+    }
+    /* hero sectiion media query */
+    .hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        font-size: 36px;
+        margin-top: 0px;
+    }
+    .hero_title button{
+        margin-bottom: 52px;
+    }
+    .hero_banner img{
+        width: 330px;
+        height: 260px;
+        margin-left: 0px;
+    }
+}
