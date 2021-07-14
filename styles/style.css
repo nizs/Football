@@ -100,6 +100,33 @@ nav ul li a{
     height: 256px;
 }
 
+/* footer section style */
+footer{
+    padding: 30px 0px;
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+    margin: 0 auto;
+    display: block;
+}
+.social_icons{
+    text-align: center;
+}
+.social_icons i{
+    background-color: #d6cccc;
+    padding: 10px;
+    border-radius: 50%;
+    color: #7d7777;
+    font-size: 24px;
+    margin-right: 14px;
+    margin-top: 20px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 30px;
+}
+
 /*---------------------------------------- 
 media query styles 
 ----------------------------------------*/
@@ -143,12 +170,28 @@ mobile devices
     .players{
         grid-template-columns: repeat(1, 1fr);
     }
+    /* footer section */
+    footer{
+        padding: 20px;
+    }
+    .logo img{
+        width: 85%;
+        height: auto;
+    }
+    .social_icons i{
+        font-size: 16px;
+    }
 
 }
 @media screen and (max-width:375px){
+    /* player bio section media query */
     .player_thumb img{
         width: 100%;
         height: auto;
+    }
+    /* footer section */
+    .social_icons i{
+        font-size: 14px;
     }
 }
 @media screen and (max-width:320px){
@@ -157,9 +200,6 @@ mobile devices
     }
     h3{
         font-size: 24px;
-    }
-    .hero_banner img{
-        
     }
 }
 
