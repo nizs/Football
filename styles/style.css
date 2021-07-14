@@ -68,7 +68,7 @@ nav ul li a{
 }
 .hero{
     display: flex;
-    padding: 60px 0px;
+    padding: 52px 0px;
 }
 .hero_banner img{
     width: 556px;
@@ -100,11 +100,17 @@ nav ul li a{
     height: 256px;
 }
 
-/*------------------------ 
+/*---------------------------------------- 
 media query styles 
---------------------------*/
+----------------------------------------*/
+/*---------------- 
+mobile devices 
+------------------*/
 @media screen and (max-width:688px) {
     /* header media query */
+    .container{
+        width: 80%;
+    }
     .fa-bars{
         display: block;
         color: #fff;
@@ -129,8 +135,8 @@ media query styles
         margin-bottom: 52px;
     }
     .hero_banner img{
-        width: 330px;
-        height: 260px;
+        width: 100%;
+        height: auto;
         margin-left: 0px;
     }
     /* player bio section media query */
@@ -139,9 +145,54 @@ media query styles
     }
 
 }
-@media screen and (max-width:320px){
-    .hero_banner img{
-        width: 300px;
-        height: 250px;
+@media screen and (max-width:375px){
+    .player_thumb img{
+        width: 100%;
+        height: auto;
     }
+}
+@media screen and (max-width:320px){
+    h1{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .hero_banner img{
+        
+    }
+}
+
+/*---------------------------------- 
+tablet devices 
+----------------------------------*/
+@media screen and (min-width:688px) and (max-width:992px){
+    h1{
+        font-size: 52px;
+    }
+    .fa-bars{
+        display: block;
+        color: #fff;
+    }
+    .navbar{
+        padding: 22px 0px;
+    }
+    nav ul{
+        display: none;
+    }
+    .hero{
+        flex-direction: column;
+        padding: 32px 0px;
+    }
+    .hero_title button{
+        margin-bottom: 52px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player_thumb img{
+        width: 100%;
+        height: auto;
+    }
+
 }
